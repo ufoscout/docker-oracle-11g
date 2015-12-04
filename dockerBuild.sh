@@ -1,1 +1,0 @@
- docker build -t oracle-11g:0.01 .
