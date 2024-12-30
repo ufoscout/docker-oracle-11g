@@ -2,7 +2,7 @@
 A Docker image for **Oracle Database 11g Enterprise Edition Release 11.2.0.1.0** based on an Oracle Linux 7.1 image.
 
 ## Build Image
-Due to legal restrictions this image is not available on the Docker Hub. However, with some time and patience you may build it yourself.
+Due to legal restrictions, this image is not available on the Docker Hub. However, with some time and patience you may build it yourself.
 
 ### Build
 Download the following zip files from [Oracle Tech Net](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/112010-linx8664soft-100572.html) and put them in the 'oracle-11g/installation_files/' folder:
@@ -13,10 +13,10 @@ Finally, from the 'oracle-11g' folder simply run:
 ```
 $ docker build -t ufoscout/oracle-11g .
 ```
-The build process could take long tiem to run; so, it is now the moment to have break and drink some good coffee...
+The build process could take long time to run; so, it is now the moment to have break and drink some good coffee...
 
 ## Run
-Due to Docker limitations this image must be run with the "privileged" flag. This is due to the amount of available memory on */dev/shm* which is limited to 64MB (see [#2606](https://github.com/docker/docker/issues/2606)). This is not sufficient to meet Oracle's *MEMORY_TARGET* minimum requirements.
+Due to Docker limitations, this image must be run with the "privileged" flag. This is due to the amount of available memory on */dev/shm* which is limited to 64MB (see [#2606](https://github.com/docker/docker/issues/2606)). This is not sufficient to meet Oracle's *MEMORY_TARGET* minimum requirements.
 
 **Please note that this limitation has been removed in Docker 1.10.**
 
